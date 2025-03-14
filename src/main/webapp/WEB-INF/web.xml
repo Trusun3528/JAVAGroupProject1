@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AddBookServlet</servlet-name>
+  	<display-name>AddBookServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlet.AddBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DisplayBooksServlet</servlet-name>
+  	<display-name>DisplayBooksServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlet.DisplayBooksServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddBookServlet</servlet-name>
+  	<url-pattern>/AddBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayBooksServlet</servlet-name>
+  	<url-pattern>/DisplayBooksServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
