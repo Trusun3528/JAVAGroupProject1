@@ -9,9 +9,10 @@ public class DBUtil {
 	public static Connection getConnection() {
 	    Connection connection = null;
 	    try {
-	        String url = "jdbc:mysql://192.168.87.24:3306/librarydb"; // change for you
-	        String username = "root"; // change for you
-	        String password = "Password1"; // change for you
+	        //String url = "jdbc:mysql://192.168.87.24:3306/librarydb"; // change for you
+	    	String url = "jdbc:mysql://localhost:3306/hr_schema";
+	    	String username = "root"; // change for you
+	        String password = "root"; // change for you
 	        connection = DriverManager.getConnection(url, username, password);
 	    } catch (SQLException e) {
 	        e.printStackTrace();
