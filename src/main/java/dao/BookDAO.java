@@ -12,7 +12,7 @@ import util.DBUtil;
 
 public class BookDAO {
 
-public static void addBook(Book book) throws Exception{
+	public static void addBook(Book book) throws Exception{
 		
 		String sql = "INSERT INTO books (title, author, publisher, year) VALUES (?, ?, ?, ?)";
 		
@@ -106,13 +106,13 @@ public static void addBook(Book book) throws Exception{
         
         // Test Creating a book
        // BookDAO bookDAO = new BookDAO();
-        Book testBook = new Book(0, "Test Book", "Harry Samson", "Hello Publisher", "2025");
+        Book testBook = new Book("Test Book", "Harry Samson", "Hello Publisher", "2025");
         
         try {
         	addBook(testBook);
-            System.out.println("✅ Book added successfully!");
+            System.out.println("Book was added successfully!");
         } catch (SQLException e) {
-            System.out.println("❌ Error inserting book!");
+            System.out.println("Error inserting book!");
             e.printStackTrace();
         }
     }

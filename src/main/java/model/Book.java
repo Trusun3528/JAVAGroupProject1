@@ -9,6 +9,15 @@ public class Book {
 
     public Book() {}
 
+    // Allows for creating book without id input
+    public Book(String title, String author, String publisher, String year) 
+    {
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.year = year;
+    }
+    
     public Book(int id, String title, String author, String publisher, String year) 
     {
         this.id = id;
