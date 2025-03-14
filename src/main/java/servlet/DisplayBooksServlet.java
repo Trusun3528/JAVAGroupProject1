@@ -36,6 +36,10 @@ public class DisplayBooksServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
+		// Name the JSP whatever you want
+        request.setAttribute("books", books);
+        request.getRequestDispatcher("DisplayBooks.jsp").forward(request, response);
+		
 	}
 
 	/**

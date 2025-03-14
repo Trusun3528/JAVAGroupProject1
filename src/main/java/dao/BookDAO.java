@@ -60,6 +60,8 @@ public class BookDAO {
 	            	
 	            	Book book = new Book(id, title, author, publisher, year);
 	            	
+	            	books.add(book);
+	            	
 	            	// All this does is pops this up on the console to make sure I'm doing it right
 	            	String resultLine = "";
 	            	resultLine += "Id: " + id + ", ";
@@ -83,6 +85,9 @@ public class BookDAO {
 		 	return books;
 	}
 	
+	// If you want to test that this is working you can uncomment
+	// Right click, and then "Run As" > "Java Application"
+	// The option is only available when "main" is uncommented
 	/*
 	public static void main(String[] args) throws Exception {
 
@@ -106,7 +111,7 @@ public class BookDAO {
         
         // Test Creating a book
        // BookDAO bookDAO = new BookDAO();
-        Book testBook = new Book("Test Book", "Harry Samson", "Hello Publisher", "2025");
+        Book testBook = new Book("Holy Book", "Greg Don", "Hello", "2015");
         
         try {
         	addBook(testBook);
