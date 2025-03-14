@@ -10,7 +10,7 @@ public class DBUtil {
 	    Connection connection = null;
 	    try {
 	        //String url = "jdbc:mysql://192.168.87.24:3306/librarydb"; // change for you
-	    	String url = "jdbc:mysql://localhost:3306/hr_schema";
+	    	String url = "jdbc:mysql://localhost:3306/librarydb";
 	    	String username = "root"; // change for you
 	        String password = "root"; // change for you
 	        connection = DriverManager.getConnection(url, username, password);
