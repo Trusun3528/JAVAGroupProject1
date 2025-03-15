@@ -16,12 +16,8 @@
   	<description></description>
   	<servlet-class>servlet.DisplayBooksServlet</servlet-class>
   </servlet>
-  <servlet-mapping>
-  	<servlet-name>AddBookServlet</servlet-name>
-  	<url-pattern>/AddBookServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>DisplayBooksServlet</servlet-name>
-  	<url-pattern>/DisplayBooksServlet</url-pattern>
-  </servlet-mapping>
+  
+  <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>
