@@ -31,6 +31,6 @@
     </table>
 
     <br>
-    <a href="AddBook.jsp">Add New Book</a>
+    <a href="AddBooks.jsp">Add New Book</a>
 </body>
 </html>
