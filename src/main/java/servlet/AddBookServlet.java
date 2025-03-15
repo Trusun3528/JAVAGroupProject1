@@ -44,6 +44,8 @@ public class AddBookServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
+		request.getRequestDispatcher("DisplayBooksServlet").forward(request, response);
+		
 	}
 
 	/**
