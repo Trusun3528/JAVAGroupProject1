@@ -27,6 +27,6 @@
 
     <br>
     <!-- Link to display all books -->
-    <a href="DisplayBooks.jsp">View All Books</a>
+    <a href="DisplayBooksServlet">View All Books</a>
 </body>
 </html>
