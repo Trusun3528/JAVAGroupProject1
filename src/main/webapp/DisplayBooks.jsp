@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +10,12 @@
 </head>
 <body>
     <h2>List of Books</h2>
+
+	<p>Total Books: ${books.size()}</p>
+	
+	<c:if test="${empty books}">
+    	<p style="color: red;">NO BOOKS FOUND IN JSP!</p>
+	</c:if>
 
     <table border="1">
         <thead>

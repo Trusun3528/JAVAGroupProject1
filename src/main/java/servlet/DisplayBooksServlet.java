@@ -38,6 +38,7 @@ public class DisplayBooksServlet extends HttpServlet {
 		
 		// Name the JSP whatever you want
         request.setAttribute("books", books);
+        System.out.println(books.getLast().getId());
         request.getRequestDispatcher("DisplayBooks.jsp").forward(request, response);
 		
 	}
